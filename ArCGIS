@@ -1,0 +1,15 @@
+Netcdf to Raster
+#Step 1: Open ArcGIS, go to search and type "netcdf to raster" and click on make netcdf raster layer.
+#Step 2: Input netcdf file - Load your netcdf file here and click on OK once its loaded.
+#Step 3: Click on add data, click on your shape file to add it in ArcGIS.
+#Step 4: Go to catalog, spatial analyst tools, extraction, then extraction by mask (Input raster - is the raster layer and input raster or feature mask data, is the shape file layer).
+#Step 5: Environment (Processing extent - same layer as your shape file), Raster analysis (Mask-Select your shape file) and click all the two OK's. After the process, delete the previous layer and remain with the current clipped raster (Play with colors as you want).
+Step 6: Finally group your shape file and the raster and name them with your preference.
+#Repeat the process for all your models/datasets.
+
+Plotting The multiple models/datasets on a one page
+#Step 1: Switch to Layout view, click on file, page and print setup and select Landscape.
+#Step 2: Partition your Landscape page depending on the number of models or datasets and the way you want it to be designed by using the rulers to help you allign everything out.
+Step 3: Insert text and input the model name.
+#Step 4: Insert, data frame, drag the nex data/model into the new data frame space, insert text and name it. Select the frame and right click, properties and add new grid as you wish.
+
