@@ -13,3 +13,14 @@ Plotting The multiple models/datasets on a one page
 Step 3: Insert text and input the model name.
 #Step 4: Insert, data frame, drag the nex data/model into the new data frame space, insert text and name it. Select the frame and right click, properties and add new grid as you wish.
 
+Raster Data To EXCEL
+#Step 1: Create a folder that will be used to store the extracted data on your PC.
+Step 2: Open the file that had your map plottings/previous file, click on file and click save as and give it a different name.
+Step 3: Select all the data frame, right click and select "Remove" to remove/delete them.
+Step 4: On the layers, renaming the raster to your model names/datasets for easy identification and move it on the top, remove its grouping. Repeat the same for all your datasets/models.
+Step 5: Add data, add your shape file. Hollow and choose an outline color that has good visibility like red and increase its width and rename it to what you want eg AOI.
+Step 6: Click on catalog, system toolboxes, Data management Tools and click on create fishnet. Output-Choose it to go the folder you had created and name it using simple names eg GK, Template extent-same as your shape file eg AOI.
+Step 7: Scroll down and go to the number of rows and columns. Here you can choose any number you want, so EXPLORE ON IT AND LET ME KNOW. Long story short, Input 100 in both of them, Geometry type: Polygon. Environments (Processing extent, same as your shape file, Raster Analysis, Mask-select your shape file.) Click the two OK's and wait for the fishnet to be created.
+Step 8: Go back to catalog, spatial analyst tools, extraction, extract multiple values to points. Input raster, select all the models/datasets there and click OK. A warning may arise but, sit tight and all will is well since for sure the data has been extracted from the fishnet. Click on geoprocessing and clip. Right click on the clipped rater, edit features and select 'start editing'. Right click to open the attribute table. In the attribute table sfter opening it, click on "select by attribute". Method:Leave it as it is "create a new selection" and double click on your first dataset name, click on "=" and last click on "get unique values". Choose "-9999" by double clicking on it. Click on verify to confirm all is good, then click on "Apply". Before closing the attribute table, click on the "X" symbol on the header so as to remove the missing values "-9999" from our datasets. Then close it and go to the "Editor", save edits and stop editing. 
+Step 9: Go back to the clipped raster and open the attribute table. Then on the first Icon, right click and choose "Export" and save as a "Text file/.txt". "Do you want to add the new table to the current map", select "NO".
+Step 10: 
