@@ -1,0 +1,20 @@
+installing CDO via UBUNTU On Windows
+Search for; Turn Windows features on or off (from the search button)
+Check ✔️ windows subsystem for Linux 
+Check ✔️ hyper-V
+Click OK- It'll then prompt you to restart your computer
+Now search Microsoft store
+And then type Ubuntu and download version 22.04
+open that ubuntu downloaded, register and set password
+sudo apt-get update
+Sudo apt install cdo
+
+INCASE OF ERROR
+correct the error. Type this command there
+sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+cdo
+
+NAVIGATE TO WHERE YOUR NC FILE IS(mnt-mounting)
+cd /mnt/e/datafolder  (Remember to input that space before mounting your folder: Mounting here directs CDO to locate where your data folders are so that when you start working on them, all outputs are displayed there)
+
+use cdo command lines like cdo sinfon filedataname.nc to display short information about your data files.
